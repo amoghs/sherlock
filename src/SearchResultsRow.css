@@ -1,28 +1,37 @@
-.component-emoji-result-row {
+.component-result-row {
   border-bottom: 1px solid #ccc;
   padding: 10px;
   height: 32px;
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   cursor: pointer;
+
+  width:50%;
+  padding:20px;
+  background-color: $grey;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 30px; /* Added */
 }
 
-.component-emoji-result-row:hover {
+.component-result-row:hover {
   background-color: #eee;
 }
 
-.component-emoji-result-row img {
+.component-result-row img {
   width: 32px;
   height: 32px;
   padding-right: 10px;
 }
 
-.component-emoji-result-row .title {
+.component-result-row .title {
   position: relative;
   top: -8px;
 }
 
-.component-emoji-result-row .info {
+.component-result-row .info {
   float: right;
   position: relative;
   top: 8px;
@@ -31,6 +40,6 @@
   display: none;
 }
 
-.component-emoji-result-row:hover .info {
+.component-result-row:hover .info {
   display: inline-block;
 }

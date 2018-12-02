@@ -1,12 +1,12 @@
-import fileData from "./fileData.json";
+import contentStore from "./contentStore.json";
 
 export default function searchData(searchText, maxResults) {
-  return fileData
-    .filter(emoji => {
-      if (emoji.title.toLowerCase().includes(searchText.toLowerCase())) {
+  return contentStore
+    .filter(content => {
+      if (content.title.toLowerCase().includes(searchText.toLowerCase())) {
         return true;
       }
-      if (emoji.keywords.includes(searchText)) {
+      if (content.snippet.includes(searchText)) {
         return true;
       }
       return false;

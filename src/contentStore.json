@@ -1,0 +1,13 @@
+[
+  {
+    "logo": "slack",
+    "title": "Slack conversation",
+    "snippet": "Snippet of the conversation"
+  },
+  {
+    "logo": "jira",
+    "title": "Jira ticket",
+    "snippet": "Snippet of the conversation"
+  }
+
+]

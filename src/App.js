@@ -23,7 +23,7 @@ class App extends PureComponent {
       <div>
         <Header />
         <SearchInput textChange={this.handleSearchChange} />
-        <SearchResults emojiData={this.state.searchResultSet} />
+        <SearchResults searchResults={this.state.searchResultSet} />
       </div>
     );
   }

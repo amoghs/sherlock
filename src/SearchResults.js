@@ -16,12 +16,13 @@ class SearchResults extends PureComponent {
 
   render() {
     return (
-      <div className="component-emoji-results">
-        {this.props.emojiData.map(emojiData => (
+      <div className="component-results">
+        {this.props.searchResults.map(content => (
           <SearchResultsRow
-            key={emojiData.title}
-            symbol={emojiData.symbol}
-            title={emojiData.title}
+            key={content.title}
+            logo={content.logo}
+            title={content.title}
+            snippet={content.snippet}
           />
         ))}
       </div>
@@ -29,6 +30,6 @@ class SearchResults extends PureComponent {
   }
 }
 SearchResults.propTypes = {
-  emojiData: PropTypes.array
+  searchResults: PropTypes.array
 };
 export default SearchResults;
