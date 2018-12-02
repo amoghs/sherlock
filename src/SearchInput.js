@@ -8,16 +8,25 @@ class SearchInput extends PureComponent {
     this.props.textChange(event);
   };
 
+
+  enterPressed = event => {
+    var code = event.keyCode || event.which;
+    if(code === 13) { //13 is the enter keycode
+        this.handleChange(event);
+    } 
+  };
+
   render() {
     return (
       <div className="component-search-input">
         <div>
-          <input onChange={this.handleChange} />
+          <input onKeyUp={this.enterPressed.bind(this)} />
         </div>
       </div>
     );
   }
 }
+
 SearchInput.propTypes = {
   textChange: PropTypes.func
 };

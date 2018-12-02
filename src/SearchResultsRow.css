@@ -1,12 +1,12 @@
 .component-result-row {
   border-bottom: 1px solid #ccc;
   padding: 10px;
-  height: 32px;
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Arimo", sans-serif;
   cursor: pointer;
 
   width:50%;
+  height:50px;
   padding:20px;
   background-color: $grey;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
@@ -20,15 +20,22 @@
   background-color: #eee;
 }
 
+
+.component-result-row-image {
+  height: 100%;
+  float: left;
+  margin-top: 5px;
+  padding-right: 5px;
+}
+
 .component-result-row img {
   width: 32px;
-  height: 32px;
   padding-right: 10px;
 }
 
 .component-result-row .title {
   position: relative;
-  top: -8px;
+  font-weight: bold;
 }
 
 .component-result-row .info {
@@ -39,6 +46,13 @@
   color: #ccc;
   display: none;
 }
+
+.component-result-row .snippet {
+  margin-left: 42px;
+  margin-top: 5px;
+}
+
+.component-result-row .info
 
 .component-result-row:hover .info {
   display: inline-block;

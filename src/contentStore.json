@@ -1,13 +1,17 @@
 [
   {
     "logo": "slack",
-    "title": "Slack conversation",
-    "snippet": "Snippet of the conversation"
+    "title": "#projectalpha",
+    "snippet": "Slack channel for Project Alpha"
+  },
+  {
+    "logo": "gmail",
+    "title": "How's Alpha project going?",
+    "snippet": "Hey mate, wondering how the project is going and if we're still on track for release?"
   },
   {
     "logo": "jira",
-    "title": "Jira ticket",
-    "snippet": "Snippet of the conversation"
+    "title": "AS-23 Alpha project tracker",
+    "snippet": "Alpha project status is green but Beta project dependency is a risk"
   }
-
 ]
