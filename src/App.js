@@ -1,20 +1,20 @@
 import React, { PureComponent } from "react";
 import Header from "./Header";
 import SearchInput from "./SearchInput";
-import EmojiResults from "./EmojiResults";
-import filterEmoji from "./filterEmoji";
+import SearchResults from "./SearchResults";
+import searchData from "./searchData";
 
 class App extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      filteredEmoji: filterEmoji("", 20)
+      searchResultSet: searchData("", 20)
     };
   }
 
   handleSearchChange = event => {
     this.setState({
-      filteredEmoji: filterEmoji(event.target.value, 20)
+      searchResultSet: searchData(event.target.value, 20)
     });
   };
 
@@ -23,7 +23,7 @@ class App extends PureComponent {
       <div>
         <Header />
         <SearchInput textChange={this.handleSearchChange} />
-        <EmojiResults emojiData={this.state.filteredEmoji} />
+        <SearchResults emojiData={this.state.searchResultSet} />
       </div>
     );
   }

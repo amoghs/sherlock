@@ -2,10 +2,10 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import Clipboard from "clipboard";
 
-import EmojiResultRow from "./EmojiResultRow";
-import "./EmojiResults.css";
+import SearchResultsRow from "./SearchResultsRow";
+import "./SearchResults.css";
 
-class EmojiResults extends PureComponent {
+class SearchResults extends PureComponent {
   componentDidMount() {
     this.clipboard = new Clipboard(".copy-to-clipboard");
   }
@@ -18,7 +18,7 @@ class EmojiResults extends PureComponent {
     return (
       <div className="component-emoji-results">
         {this.props.emojiData.map(emojiData => (
-          <EmojiResultRow
+          <SearchResultsRow
             key={emojiData.title}
             symbol={emojiData.symbol}
             title={emojiData.title}
@@ -28,7 +28,7 @@ class EmojiResults extends PureComponent {
     );
   }
 }
-EmojiResults.propTypes = {
+SearchResults.propTypes = {
   emojiData: PropTypes.array
 };
-export default EmojiResults;
+export default SearchResults;
