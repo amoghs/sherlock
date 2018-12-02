@@ -1,0 +1,10 @@
+Todo.txt
+
+Did recall and now I could do precision
+So basically typing beta and showing 5 different placex where the file could be
+
+also look into animations.
+
+
+I think that's more important than actually seeing apis and trying to integrate there - reasonably make a call you won't do that yourself. so convince someone or bail.
+
