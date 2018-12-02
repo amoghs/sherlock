@@ -20,7 +20,7 @@ class SearchInput extends PureComponent {
     return (
       <div className="component-search-input">
         <div>
-          <input onKeyUp={this.enterPressed.bind(this)} />
+          <input placeholder="Try project alpha" onKeyUp={this.enterPressed.bind(this)} />
         </div>
       </div>
     );
