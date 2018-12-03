@@ -7,11 +7,31 @@
   {
     "logo": "gmail",
     "title": "How's Alpha project going?",
-    "snippet": "Hey mate, wondering how the project is going and if we're still on track for release?"
+    "snippet": "...wondering if we're still on track for project alpha release?..."
   },
   {
     "logo": "jira",
     "title": "AS-23 Alpha project tracker",
     "snippet": "Alpha project status is green but Beta project dependency is a risk"
+  },
+  {
+    "logo": "gmail",
+    "title": "Stakeholders for project alpha",
+    "snippet": "Hey mate - Who're the dependencies for this project?"
+  },
+  {
+    "logo": "figma",
+    "title": "Design proposal for project beta",
+    "snippet": "Explorations v1.0 - beta design file"
+  },
+  {
+    "logo": "outlook",
+    "title": "Here's my previous work on beta",
+    "snippet": "Hey mate, Attaching my figma beta design files on early explorations."
+  },
+  {
+    "logo": "slack",
+    "title": "@james on #projectbeta",
+    "snippet": "Here's the final project beta design files :)"
   }
 ]

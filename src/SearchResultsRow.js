@@ -6,7 +6,7 @@ class SearchResultsRow extends PureComponent {
   render() {
     // const codePointHex = this.props.symbol.codePointAt(0).toString(16);
     // const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
-    const logoUrl = require(`./${this.props.logo}.png`);
+    const logoUrl = require(`./logos/${this.props.logo}.png`);
     console.log(logoUrl);
     return (
       <div className="component-result-row slide-top">
