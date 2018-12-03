@@ -9,7 +9,7 @@ class SearchResultsRow extends PureComponent {
     const logoUrl = require(`./${this.props.logo}.png`);
     console.log(logoUrl);
     return (
-      <div className="component-result-row">
+      <div className="component-result-row slide-top">
         <div className="component-result-row-image">
           <img alt={this.props.title} src={logoUrl} />
         </div>
