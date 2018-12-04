@@ -6,13 +6,6 @@ import SearchResultsRow from "./SearchResultsRow";
 import "./SearchResults.css";
 
 class SearchResults extends PureComponent {
-  componentDidMount() {
-    this.clipboard = new Clipboard(".copy-to-clipboard");
-  }
-
-  componentWillUnmount() {
-    this.clipboard.destroy();
-  }
 
   render() {
     return (

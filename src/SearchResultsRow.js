@@ -4,22 +4,53 @@ import "./SearchResultsRow.css";
 
 class SearchResultsRow extends PureComponent {
   render() {
-    // const codePointHex = this.props.symbol.codePointAt(0).toString(16);
-    // const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
-    const logoUrl = require(`./logos/${this.props.logo}.png`);
-    console.log(logoUrl);
     return (
-      <div className="component-result-row slide-top">
-        <div className="component-result-row-image">
-          <img alt={this.props.title} src={logoUrl} />
-        </div>
-        <div className="title">{this.props.title}</div>
-        <div className="snippet">{this.props.snippet}</div>
-        <span className="info">Open content</span>
-      </div>
+      <Card {...this.props} />
     );
   }
 }
+
+const Card = (cardInfo) => {
+  if (cardInfo.logo.includes("namely")) {
+    return <SpecialNamelyCard {...cardInfo}/>;
+  }
+  return <SimpleCard {...cardInfo} />;
+};
+
+const SimpleCard = (cardInfo) => {
+  const logoUrl = require(`./logos/${cardInfo.logo}.png`);
+  return (
+    <div className="component-result-row slide-top">
+      <div className="component-result-row-image">
+        <img alt={cardInfo.title} src={logoUrl} />
+      </div>
+      <div className="title">{cardInfo.title}</div>
+      <div className="snippet">{cardInfo.snippet}</div>
+      <div className="info">⇨</div>
+    </div>
+  );
+};
+
+const SpecialNamelyCard = (cardInfo) => {
+  const logoUrl = require(`./logos/${cardInfo.logo}.png`);
+  return (
+    <div className="component-result-row special-card slide-top">
+      <div className="component-result-row-image">
+        <img alt={cardInfo.title} src={logoUrl} />
+      </div>
+      <div className="namely-profile-image">
+        <img src={require('./profile_avatar.png')} />
+      </div>
+      <div className="namely-details">
+        <b>Name:</b> James Andrews
+        <br /><b>Role:</b> Product manager, Sherlock
+        <br /><b>Manager:</b> Someone else
+      </div>
+      <span className="info">Chat on Slack ⇨</span>
+
+    </div>
+  );
+};
 
 SearchResultsRow.propTypes = {
   title: PropTypes.string,

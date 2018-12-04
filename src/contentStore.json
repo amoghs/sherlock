@@ -31,7 +31,12 @@
   },
   {
     "logo": "slack",
-    "title": "@james on #projectbeta",
+    "title": "@rebecca on #projectbeta",
     "snippet": "Here's the final project beta design files :)"
+  },
+  {
+    "logo": "namely",
+    "title": "James Andrews, Product Manager",
+    "snippet": ""
   }
 ]

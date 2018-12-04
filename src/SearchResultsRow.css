@@ -2,6 +2,7 @@
 
 
 .component-result-row {
+
   border-bottom: 1px solid #ccc;
   padding: 10px;
   position: relative;
@@ -41,21 +42,21 @@
   font-weight: bold;
 }
 
-.component-result-row .info {
-  float: right;
-  position: relative;
-  top: 8px;
-  right: 10px;
-  color: #ccc;
-  display: none;
-}
 
 .component-result-row .snippet {
   margin-left: 42px;
   margin-top: 5px;
 }
 
-.component-result-row .info
+.component-result-row .info {
+  float: right;
+  position: relative;
+  top: -25px;
+  right: 10px;
+  color: #ccc;
+  font-weight: bold;
+  display: none;
+}
 
 .component-result-row:hover .info {
   display: inline-block;
@@ -66,6 +67,27 @@
 	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+
+.special-card {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.special-card .info {
+  top: -1px;
+  right: -50px;
+}
+
+.namely-profile-image img {
+  width:150px;
+}
+
+.namely-details {
+  margin-left:30px;
+}
+
 
 
 @-webkit-keyframes slide-top {
